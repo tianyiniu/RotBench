@@ -57,7 +57,13 @@ def process_image(img_name: str, img_path: str, client, model_name: str):
 # Main entry point
 if __name__ == "__main__":
 
-    nick, max_workers = "GPT4o", 10
+    p = argparse.ArgumentParser()
+    p.add_argument("-n", "--nickname", type=str, required=True)
+    p.add_argument("-w", "--max_workers", type=int, default=3)
+    args = p.parse_args()
+
+    nick = args.nickname
+    max_workers = args.max_workers
 
     nick_to_name_port = {
         "Qwen7": ("Qwen/Qwen2.5-VL-7B-Instruct", 7472),

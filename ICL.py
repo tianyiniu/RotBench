@@ -145,7 +145,7 @@ if __name__ == "__main__":
 
     p = argparse.ArgumentParser()
     p.add_argument("-n", "--num_examples", type=int, required=True)
-    p.add_argument("-w", "--max_workers", type=int, default=1)
+    p.add_argument("-w", "--max_workers", type=int, default=3)
     args = p.parse_args()
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print("Device:", device)

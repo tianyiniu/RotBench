@@ -95,7 +95,13 @@ def template_match(image_name, model_response: str, is_cot: bool):
 # Main entry point
 if __name__ == "__main__":
 
-    nick, max_workers = "GPT5", 3
+    p = argparse.ArgumentParser()
+    p.add_argument("-n", "--nickname", type=str, required=True)
+    p.add_argument("-w", "--max_workers", type=int, default=3)
+    args = p.parse_args()
+
+    nick = args.nickname
+    max_workers = args.max_workers
 
     all_gts, all_preds = [], []
     accs = []
