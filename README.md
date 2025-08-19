@@ -272,3 +272,11 @@ python FT_training.py -r 0 -fp QwenFT
 # Evaluate the saved model with seed 0
 python FT_inference.py -r 0 -fp QwenFT
 ```
+
+##Citation
+
+If you find our project useful in your research, please cite the following paper:
+
+```bibtex
+
+```
