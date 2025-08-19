@@ -114,7 +114,7 @@ Extract image subjects:
 
 ## Quickstart
 
-Download RotBench and execute `quickstart.sh` to evaluate GPT-4o on RotBench-Lmall without any forms of auxiliary information.
+Download RotBench and execute `quickstart.sh` to evaluate GPT-4o on RotBench-Small without any forms of auxiliary information.
 
 `> ./quickstart.sh`
 
