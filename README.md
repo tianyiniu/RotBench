@@ -12,7 +12,7 @@ We investigate to what extent Multimodal Large Language Models (MLLMs) can accur
 
 # RotBench Pipeline
 
-<img src='./assets/imgrot_main_v2.pdf'>
+<img src='./assets/imgrot_main_v2.png'>
 
 For each image in RotBench, we rotate the image 0°, 90°, 180°, and 270° counter-clockwise. We represent the rotation estimation problem as a multiple-choice question answering problem, and separately measure accuracy on each image orientation. We optionally provide different forms of auxiliary information to aid the model in identifying image rotation. We emphasize that all forms of auxiliary information are separately extracted for each rotation; the ground truth rotation is not marked.
 
