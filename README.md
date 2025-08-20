@@ -278,5 +278,13 @@ python FT_inference.py -r 0 -fp QwenFT
 If you find our project useful in your research, please cite the following paper:
 
 ```bibtex
-
+@misc{niu2025rotbenchevaluatingmultimodallarge,
+      title={RotBench: Evaluating Multimodal Large Language Models on Identifying Image Rotation}, 
+      author={Tianyi Niu and Jaemin Cho and Elias Stengel-Eskin and Mohit Bansal},
+      year={2025},
+      eprint={2508.13968},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2508.13968}, 
+}
 ```
