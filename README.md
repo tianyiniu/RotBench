@@ -57,13 +57,24 @@ To run call proprietary models, ensure you replace the placeholder API keys in `
 
 ## Data Download 
 
-All images in RotBench are available here: ***[Placeholder link.](https://github.com/tianyiniu/RotBench/)***
+All images in RotBench are available on ***[HuggingFace](https://huggingface.co/datasets/tianyin/RotBench)***
 
-The downloaded directory should be named `RotBench-Data` and placed at the top-level of the repository. `RotBench-Data` contains to child directories: `RotBench_large` and `RotBench_small`. 
+```python
+from datasets import load_dataset
+
+dataset = load_dataset("tianyin/RotBench")
+data = dataset['large'] # or dataset['small']
+
+for i, sample in enumerate(data):
+    image = sample['image']  # PIL Image object
+    image_name = sample['image_name'] 
+```
+
+The following scripts expect a directory named `RotBench-Data` and placed at the top-level of the repository. `RotBench-Data` contains to child directories: `RotBench_large` and `RotBench_small`. `download_and_format_data.py` will download and format the dataset for you.
 
 ## Obtaining Rotated Datasets
 
-To created the rotated images, execute:
+After downloading the dataset, execute:
 
 `python create_datasets.py`
 
