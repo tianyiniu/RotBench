@@ -5,8 +5,6 @@ Authors: [Tianyi Niu](https://www.linkedin.com/in/tianyi-niu/)¹, [Jaemin Cho](h
 
 ¹UNC Chapel Hill <br>
 
-***RotBench data will be released soon***
-
 # Abstract
 
 <img src='./assets/imgrot_mini.png' style="display: block; margin: 0 auto; width: 400px;">
