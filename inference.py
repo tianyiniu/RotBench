@@ -327,7 +327,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-nick", "--model_nickname", type=str, required=True, help="Model nickname")
-    parser.add_argument("-workers", "--max_workers", type=int, required=True, help="Thread pool size")
+    parser.add_argument("-workers", "--max_workers", type=int, default=3, help="Thread pool size")
     parser.add_argument("-ds", "--dataset", type=str, required=True, help="Dataset to use", choices=["small", "large"])
     parser.add_argument("--run", type=int, required=True, help="Number of current run, also used for seeding")
 

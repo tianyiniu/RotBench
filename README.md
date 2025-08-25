@@ -26,7 +26,7 @@ For each image in RotBench, we rotate the image 0°, 90°, 180°, and 270° coun
 
 ## VLLM Servers
 
-We evaluate Llama-3.2-11B-Vision (meta-llama/Llama-3.2-11B-Vision) and Qwen2.5-VL-7B-Instruct (Qwen/Qwen2.5-VL-7B-Instruct) on RotBench. We also use Qwen--8B (Qwen/Qwen3-8B) to evalute all model responses. Our code assumes access to these models through the following ports on localhost: 
+We evaluate Llama-3.2-11B-Vision (meta-llama/Llama-3.2-11B-Vision) and Qwen2.5-VL-7B-Instruct (Qwen/Qwen2.5-VL-7B-Instruct) on RotBench. We also use Qwen--8B (Qwen/Qwen3-8B) to evalute chain-of-thought model responses. Our code assumes access to these models through the following ports on localhost: 
 
 | Model         | Port  |
 |---------------|-------|
