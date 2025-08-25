@@ -51,7 +51,7 @@ The codebase makes frequent use of the follwoing model nicknames:
 
 ## API Keys
 
-To run call proprietary models, ensure you replace the placeholder API keys in `.env`
+To run experiments with proprietary models, make sure to first replace the placeholder API keys in `.env`
 
 ## Data Download 
 
